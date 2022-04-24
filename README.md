@@ -20,7 +20,7 @@ The Random Forest model predicted with less error than the null model (i.e. mean
 
 The variance in the model -- as seen through a residual plot categorized by borough (below) -- shows that the model predicted less accurately in wealthier census tracts; it predicted best in the Bronx and worst in Manhattan. This suggests the need for better feature selection and/or engineering; it also reinforces the implication of the .65 R2 score, which is that there is substantial variance in income in New York City that cannot be accounted for by the variables used. 
 
-![residual plot](visuals/resid_plot.png?raw=true)
+![residual plot](https://github.com/anniebishai/NYC-Trees-Air-Income/blob/visuals/resid_plot.png?raw=true)
 
 
 # Applications and Further Steps
