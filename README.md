@@ -18,7 +18,7 @@ After doing exploratory data analysis using Geopandas and Tableau, I attempted f
 
 The Random Forest model predicted with less error than the null model (i.e. mean household income), but it retained high variance throughout many iterations. The R2 score on the training set was 0.9458; the R2 score on the testing set was 0.6509 -- meaning that 65% of variance in median household income is explained by the independent variables in the model. The model's mean squared error showed a 65.15% improvement from the null.
 
-The variance in the model -- as seen through a residual plot categorized by borough (below) -- shows that the model predicted less accurately in wealthier census tracts; it predicted best in the Bronx and worst in Manhattan.
+The variance in the model -- as seen through a residual plot categorized by borough (below) -- shows that the model predicted less accurately in wealthier census tracts; it predicted best in the Bronx and worst in Manhattan. This suggests the need for better feature selection and/or engineering; it also reinforces the implication of the .65 R2 score, which is that there is substantial variance in income in New York City that cannot be accounted for by the variables used. 
 
 ![residual plot](visuals/resid_plot.png?raw=true)
 
