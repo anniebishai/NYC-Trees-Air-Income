@@ -17,9 +17,9 @@ Following data analysis of tree and air quality metrics across New York City’s
 # Methodology
 The 2005 and 2015 Tree Censuses include observations on individual street trees in New York City. Using Geopandas, I matched each tree counted to its respective 2010 census tract, based on latitude and longitude recorded in the tree census and publicly available shapefiles of the census tracts. I then reconfigured the individual tree measures into aggregates by 2010 census tract, in order that each of these microdistricts could serve as an observation in my model.
 
-In order to incorporate air quality metrics, I used the same method with shapefiles of New York's Community Districts, matching each tree to its respective district (an integer) and using the mode of these matches in each census tract to estimate the best overlap between census tract and community district. These steps are shown in notebooks/geosetup_aggregate_data in this repo.
+In order to incorporate air quality metrics, I used the same method with shapefiles of New York's Community Districts, matching each tree to its respective district (an integer) and using the mode of these matches in each census tract to estimate the best overlap between census tract and community district. These steps are shown in `notebooks/geosetup_aggregate_data` in this repo.
 
-After doing exploratory data analysis using Geopandas and Tableau (see notebooks/EDA), I attempted training several models on the data. Among the various ensemble models from the scikit-learn library that I tried, the Random Forest Regressor performed best in predicting household income based on the features included. I tuned the model using GridSearchCV and ran the model with several different selections of features. This is shown in notebooks/modeling. 
+After doing exploratory data analysis using Geopandas and Tableau (see `notebooks/EDA`), I attempted training several models on the data. Among the various ensemble models from the scikit-learn library that I tried, the Random Forest Regressor performed best in predicting household income based on the features included. I tuned the model using GridSearchCV and ran the model with several different selections of features. This is shown in `notebooks/modeling`. 
 
 # Results 
 
